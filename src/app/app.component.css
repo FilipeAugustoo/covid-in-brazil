@@ -1,0 +1,130 @@
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.container {
+  color: white;
+  margin: 5% auto;
+  width: 50%;
+  height: 50vh;
+  backdrop-filter: saturate(180%) blur(10px);
+  padding: 6%;
+  border-radius: 10px;
+  -webkit-animation: container 2s ease-in-out;
+  -moz-animation: container 2s ease-in-out;
+  -o-animation: container 2s ease-in-out;
+  animation: container 2s ease-in-out;
+}
+
+.textos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .5s ease-in-out;
+  -webkit-animation: textos 0.5s ease-in-out;
+  -moz-animation: textos 0.5s ease-in-out;
+  -o-animation: textos 0.5s ease-in-out;
+  animation: textos 0.5s ease-in-out;
+}
+
+.textos h2 {
+  font-size: 2.3rem;
+  padding: 5% 0;
+}
+
+.textos h3 {
+  font-size: 1.8rem;
+  padding: 5% 0;
+}
+
+.textos p {
+  font-size: 1.3rem;
+}
+
+footer {
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+  background-color: #075d7e;
+}
+
+@-webkit-keyframes container {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @-moz-keyframes container {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes container {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes container {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+@-webkit-keyframes textos{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @-moz-keyframes textos{
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes textos{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes textos{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 85%;
+    height: 60vh;
+  }
+
+  .textos h2 {
+    font-size: 1.2rem;
+  }
+
+  .textos h3 {
+    font-size: 1.3rem;
+  }
+
+  .textos p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .textos h3 {
+    font-size: 2rem;
+  }
+
+  .textos h2 {
+    font-size: 2.5rem;
+  }
+
+  .textos p {
+    font-size: 1.8rem;
+  }
+}
